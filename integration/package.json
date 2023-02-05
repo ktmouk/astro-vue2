@@ -1,0 +1,28 @@
+{
+  "name": "astro-vue2",
+  "private": true,
+  "version": "0.0.0",
+  "type": "module",
+  "scripts": {
+    "dev": "vite build --watch",
+    "build": "tsc && vite build",
+    "format": "prettier -w --ignore-unknown ."
+  },
+  "exports": {
+    ".": "./dist/main.js",
+    "./client.js": "./dist/client.js",
+    "./server.js": "./dist/server.js"
+  },
+  "devDependencies": {
+    "prettier": "^2.8.3",
+    "typescript": "^4.9.3",
+    "vite": "^4.1.0"
+  },
+  "dependencies": {
+    "astro": "^2.0.6",
+    "vite-plugin-vue2": "^2.0.3",
+    "vue": "^2.7.14",
+    "vue-server-renderer": "^2.7.14",
+    "vue-template-compiler": "2.7.14"
+  }
+}

@@ -1,0 +1,23 @@
+{
+  "name": "astro",
+  "type": "module",
+  "version": "0.0.0",
+  "private": true,
+  "scripts": {
+    "dev": "astro dev",
+    "start": "astro dev",
+    "build": "astro build",
+    "preview": "astro preview",
+    "format": "prettier -w --plugin-search-dir=. --ignore-unknown .",
+    "astro": "astro"
+  },
+  "dependencies": {
+    "astro": "^2.0.6",
+    "astro-vue2": "workspace:*",
+    "vue": "^2.7.14",
+    "vue-server-renderer": "^2.7.14"
+  },
+  "devDependencies": {
+    "prettier-plugin-astro": "^0.8.0"
+  }
+}

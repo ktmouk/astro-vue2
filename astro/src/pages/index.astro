@@ -1,0 +1,15 @@
+---
+// @ts-ignore
+import Counter from "../components/Counter.vue";
+
+import Child from "../components/Child.astro";
+import Layout from "../layouts/Layout.astro";
+---
+
+<Layout title="Astro and Vue2">
+  <main>
+    <Counter defaultValue={10} client:visible>
+      <Child name={"Astro component!"} />
+    </Counter>
+  </main>
+</Layout>
