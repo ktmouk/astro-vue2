@@ -2,7 +2,7 @@
 
 This is the proof of concept if Astro can integrate with Vue 2, not 3. I got curious about whether Astro can support Vue2 technically and I made it. It isn't meant for production use.
 
-## Installation
+## How to run
 
 It is easy to run this project, like below.
 If you don't install the pnpm, please install it referring to [pnpm's installation](https://pnpm.io/installation) in advaince.
