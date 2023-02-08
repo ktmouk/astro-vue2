@@ -4,11 +4,11 @@ import { createRenderer } from "vue-server-renderer";
 import { buildScopedSlots } from "./scoped-slots";
 
 const check: SSRLoadedRenderer["ssr"]["check"] = async (
-  _Component,
+  Component,
   _props,
   _children
 ) => {
-  return true;
+  return !!Component["staticRenderFns"];
 };
 
 const renderToStaticMarkup: SSRLoadedRenderer["ssr"]["renderToStaticMarkup"] =

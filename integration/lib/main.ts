@@ -16,7 +16,7 @@ function getViteConfiguration() {
       include: ["astro-vue2/client.js", "vue"],
       exclude: ["astro-vue2/server.js"],
     },
-    plugins: [createVuePlugin()]
+    plugins: [createVuePlugin()],
   };
 }
 
