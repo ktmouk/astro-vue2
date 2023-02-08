@@ -22,7 +22,7 @@ function getViteConfiguration() {
 
 export default function (): AstroIntegration {
   return {
-    name: "astro-vue2-integration",
+    name: "astro-vue2",
     hooks: {
       "astro:config:setup": ({ addRenderer, updateConfig }) => {
         addRenderer(getRenderer());
